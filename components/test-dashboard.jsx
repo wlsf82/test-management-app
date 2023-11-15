@@ -5,6 +5,7 @@
 import { Button } from "@/components/ui/button"
 import { DropdownMenuTrigger, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
 import Link from "next/link"
+import Image from 'next/image'
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 
 export function TestDashboard() {
@@ -104,16 +105,13 @@ export function TestDashboard() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="p-6 border rounded-lg">
               <h2 className="font-semibold text-gray-800 mb-4">Test Execution Trends</h2>
-              <img
-                alt="Test Execution Trends"
+              <Image
+                src="https://tweets-codecademy.s3.eu-central-1.amazonaws.com/placeholder.png"
+                alt="Placeholder"
                 className="w-full rounded-lg"
+                width="500"
                 height="250"
-                src="/placeholder.png"
-                style={{
-                  aspectRatio: "500/250",
-                  objectFit: "cover",
-                }}
-                width="500" />
+              />
             </div>
             <div className="p-6 border rounded-lg">
               <h2 className="font-semibold text-gray-800 mb-4">Test Summary</h2>
